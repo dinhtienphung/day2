@@ -1,9 +1,13 @@
-package helloworld;
+package day2.Pojo;
+
+import java.util.Date;
 
 public class Account {
     private long id;
     private String ownerName;
     private double balance;
+    private Date accessTime;
+    private boolean locked;
 
     public long getId() {
         return id;
@@ -27,5 +31,24 @@ public class Account {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    public Date getAccessTime() {
+        return accessTime;
+    }
+
+    public void setAccessTime(Date accessTime) {
+        this.accessTime = accessTime;
+    }
+
+    public boolean isLocked() {
+        return locked;
+    }
+
+    public void setLocked(boolean locked) {
+        this.locked = locked;
+    }
+
+    public void setOwenerName(String tai) {
     }
 }
