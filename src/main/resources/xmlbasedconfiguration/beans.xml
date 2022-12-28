@@ -4,11 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-<!--    <bean id= "accountRepo" class= "day2.Pojo.AccountRepoImpl"/>-->
-<!--    <bean id = "accountService" class = "day2.Pojo.AccountServiceImpl">-->
-<!--        <property name="accountRepository" ref="accountRepo"/>-->
-    <bean id= "studentMethod" class= "day2.Pojo.StudentMethodIml"/>
-    <bean id = "compa" class = "day2.Pojo.CompaIml">
-        <property name="studentMethod" ref="studentMethod"/>
+    <bean id= "accountRepo" class= "day2.Pojo.AccountRepoImpl"/>
+    <bean id = "accountService" class = "day2.Pojo.AccountServiceImpl">
+        <property name="accountRepository" ref="accountRepo"/>
     </bean>
+<!--    <bean id= "studentMethod" class= "day2.Pojo.StudentMethodIml"/>-->
+<!--    <bean id = "compa" class = "day2.Pojo.CompaIml">-->
+<!--        <property name="studentMethod" ref="studentMethod"/>-->
+<!--    </bean>-->
+
 </beans>
